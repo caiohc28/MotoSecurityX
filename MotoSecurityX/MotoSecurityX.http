@@ -1,0 +1,6 @@
+@MotoSecurityX_HostAddress = http://localhost:5024
+
+GET {{MotoSecurityX_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

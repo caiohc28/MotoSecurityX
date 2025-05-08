@@ -1,6 +1,6 @@
 # MotoSecurityX API
 
-API RESTful desenvolvida com ASP.NET Core para gerenciar motos no pátio da empresa Mottu. Este projeto faz parte do Challenge 2025 da FIAP e está alinhado com a proposta de mapeamento inteligente e monitoramento de motos em filiais.
+API RESTful desenvolvida com ASP.NET Core para gerenciar motos no pátio da empresa Mottu.
 
 ## 👥 Integrantes
 
@@ -35,7 +35,7 @@ API RESTful desenvolvida com ASP.NET Core para gerenciar motos no pátio da empr
 git clone https://github.com/caiohc28/MotoSecurityX.git
 ```
 
-4. Execute o projeto:
+2. Execute o projeto:
 ```bash
 cd MotoSecurityX
 dotnet run

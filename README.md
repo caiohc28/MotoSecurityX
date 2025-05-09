@@ -1,6 +1,6 @@
 # MotoSecurityX API
 
-API RESTful desenvolvida com ASP.NET Core para gerenciar motos no pátio da empresa Mottu.
+O projeto MotoSecurityX tem como objetivo o controle e monitoramento de motos, permitindo o registro, atualização, exclusão e consulta de dados das motos por meio de uma API RESTful. Esse projeto é feito em colaboração com a MOTTU.
 
 ## 👥 Integrantes
 

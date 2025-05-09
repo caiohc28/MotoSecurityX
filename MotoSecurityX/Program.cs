@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MotoSecurityX.Data;
+using MotoSecurityX.DTO;
 using MotoSecurityX.Repositories;
 
 
@@ -15,6 +16,8 @@ builder.Services.AddScoped<IMotoRepository, MotoRepository>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(MappingConfig));
+
 
 var app = builder.Build();
 

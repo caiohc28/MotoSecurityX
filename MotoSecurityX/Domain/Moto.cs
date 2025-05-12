@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MotoSecurityX.Models
+namespace MotoSecurityX.Domain
 {
     public class Moto
     {

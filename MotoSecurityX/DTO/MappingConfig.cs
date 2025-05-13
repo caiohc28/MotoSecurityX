@@ -1,7 +1,7 @@
 ﻿namespace MotoSecurityX.DTO
 {
     using AutoMapper;
-    using MotoSecurityX.Models;
+    using MotoSecurityX.Domain;
 
     public class MappingConfig : Profile
     {

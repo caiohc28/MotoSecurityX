@@ -1,4 +1,4 @@
-﻿using MotoSecurityX.Models;
+﻿using MotoSecurityX.Domain;
 
 namespace MotoSecurityX.Repositories
 {

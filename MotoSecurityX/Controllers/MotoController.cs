@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using MotoSecurityX.Models;
+using MotoSecurityX.Domain;
 using MotoSecurityX.Repositories;
 
 namespace MotoSecurityX.Controllers

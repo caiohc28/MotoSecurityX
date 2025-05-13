@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MotoSecurityX.Data;
-using MotoSecurityX.Models;
+using MotoSecurityX.Domain;
 
 namespace MotoSecurityX.Repositories
 {

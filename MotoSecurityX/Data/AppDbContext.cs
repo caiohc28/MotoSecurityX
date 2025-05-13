@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MotoSecurityX.Models;
+using MotoSecurityX.Domain;
 
 namespace MotoSecurityX.Data
 {

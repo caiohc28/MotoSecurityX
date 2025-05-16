@@ -12,6 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Injeção de dependência
 builder.Services.AddScoped<IMotoRepository, MotoRepository>();
+builder.Services.AddScoped<IPatioRepository, PatioRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

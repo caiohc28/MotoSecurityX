@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MotoSecurityX.Data;
-using MotoSecurityX.DTO;
+using MotoSecurityX.Mapping;
 using MotoSecurityX.Repositories;
 
 

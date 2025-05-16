@@ -1,4 +1,6 @@
-﻿namespace MotoSecurityX.DTO
+﻿using MotoSecurityX.DTO;
+
+namespace MotoSecurityX.Mapping
 {
     using AutoMapper;
     using MotoSecurityX.Domain;
@@ -8,8 +10,8 @@
         public MappingConfig()
         {
             CreateMap<Moto, MotoDTO>().ReverseMap();
-            CreateMap<Moto, CreateMotoDTO>().ReverseMap();
-            CreateMap<Moto, UpdateMotoDTO>().ReverseMap();
+            CreateMap<Patio, PatioDTO>().ReverseMap();
+
         }
     }
 }

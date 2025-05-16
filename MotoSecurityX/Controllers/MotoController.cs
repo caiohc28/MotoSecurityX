@@ -49,22 +49,13 @@ namespace MotoSecurityX.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Moto moto)
         {
-            if (string.IsNullOrEmpty(moto.Placa) || string.IsNullOrEmpty(moto.Modelo) || string.IsNullOrEmpty(moto.Situacao))
-            {
-                return BadRequest("Todos os campos são obrigatórios.");
-            }
             if (id != moto.Id)
-            {
-                return BadRequest("O ID informado não corresponde ao ID da moto.");
-            }
+                return BadRequest("ID inconsistente.");
 
-            var existenteMoto = await _repository.GetByIdAsync(id);
-            if (existenteMoto == null)
-            {
-                return NotFound("Moto não encontrada.");
-            }
             var atualizado = await _repository.UpdateAsync(moto);
-            return atualizado ? NoContent() : StatusCode(500, "Erro ao tentar atualizar a moto.");
+
+            // Retorna o resultado apropriado
+            return atualizado ? Ok(moto) : NotFound();
         }
 
 

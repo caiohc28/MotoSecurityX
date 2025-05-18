@@ -21,19 +21,33 @@ O projeto MotoSecurityX tem como objetivo o controle e monitoramento de motos, p
 ## 📦 Funcionalidades
 
 Moto
+
 GET /api/moto – Lista todas as motos
+
 GET /api/moto/{id} – Busca moto por ID
+
 GET /api/moto/placa/{placa} – Busca moto por placa
+
 GET /api/moto/situação/{situação} - Busca motos que estão dentro ou fora do pátio
+
 POST /api/moto – Cadastra uma nova moto
+
 PUT /api/moto/{id} – Atualiza uma moto existente
+
 DELETE /api/moto/{id} – Remove uma moto
+
 Pátio
+
 GET /api/patio – Lista todos os pátios
+
 GET /api/patio/{id} – Busca pátio por ID
+
 POST /api/patio – Cadastra um novo pátio
+
 PUT /api/patio/{id} – Atualiza um pátio existente
+
 DELETE /api/patio/{id} – Remove um pátio
+
 
 ## ⚙️ Instalação
 

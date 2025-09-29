@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Oracle + EF Core
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseOracle(builder.Configuration.GetConnectionString("OracleDb")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Injeção de dependência
 builder.Services.AddScoped<IMotoRepository, MotoRepository>();

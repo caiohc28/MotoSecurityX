@@ -90,4 +90,3 @@ docker push acrmotox.azurecr.io/motox:v2
 ✅ DELETE /api/patios/1
 
 ✅ GET /api/patios
-```

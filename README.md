@@ -1,71 +1,40 @@
-# MotoSecurityX API
+# 🚀 MotoSecurityX - DevOps & Cloud Computing (ACI + ACR + Azure SQL)
 
-O projeto MotoSecurityX tem como objetivo o controle e monitoramento de motos, permitindo o registro, atualização, exclusão e consulta de dados das motos por meio de uma API RESTful. Esse projeto é feito em colaboração com a MOTTU.
-
-## 👥 Integrantes
-
-- Caio Henrique – RM: 554600  
-- Carlos Eduardo - RM: 555223
-- Antônio Lino - RM: 554518
+Sistema de monitoramento de motos em pátios (filiais), com controle de **entradas e saídas** via API .NET, publicado em **Azure Container Instance (ACI)** com imagem no **Azure Container Registry (ACR)** e banco **Azure SQL**.
 
 
-## 🔧 Tecnologias Utilizadas
+##  1. Descrição da Solução
 
-- ASP.NET 
-- Entity Framework Core
-- Banco de Dados Oracle
-- Swagger (OpenAPI)
-- Injeção de Dependência
-- RESTful API
+O **MotoSecurityX** é uma API REST para controle de **motos e pátios**, permitindo **cadastro, listagem, edição e exclusão**.
 
-## 📦 Funcionalidades
+##  2. Benefícios para o Negócio
 
-Moto
-
-GET /api/moto – Lista todas as motos
-
-GET /api/moto/{id} – Busca moto por ID
-
-GET /api/moto/placa/{placa} – Busca moto por placa
-
-GET /api/moto/situação/{situação} - Busca motos que estão dentro ou fora do pátio
-
-POST /api/moto – Cadastra uma nova moto
-
-PUT /api/moto/{id} – Atualiza uma moto existente
-
-DELETE /api/moto/{id} – Remove uma moto
-
-Pátio
-
-GET /api/patio – Lista todos os pátios
-
-GET /api/patio/{id} – Busca pátio por ID
-
-POST /api/patio – Cadastra um novo pátio
-
-PUT /api/patio/{id} – Atualiza um pátio existente
-
-DELETE /api/patio/{id} – Remove um pátio
+| Problema | Solução |
+|----------|---------|
+| Controle manual em planilhas | Banco centralizado na nuvem |
+| Falta de rastreamento de entradas/saídas | API com histórico completo |
+| Falta de integração entre pátios | Acesso unificado via endpoints REST |
 
 
-## ⚙️ Instalação
+##  3. Banco de Dados (Executar script_bd.sql)
 
-1. Clone o repositório:
+Tabelas:
+
+- **Pátios**
+- **Motos**
+
+
+##  4. Deploy com Docker + Azure
+
 ```bash
-git clone https://github.com/caiohc28/MotoSecurityX.git
-```
+docker build -t acrmotox.azurecr.io/motox:v2 .
+az login
+az acr login --name acrmotox
+docker push acrmotox.azurecr.io/motox:v2
 
-2. Execute o projeto:
-```bash
-cd MotoSecurityX
-dotnet run
-```
 
-## 🧪 Swagger
-
-A documentação interativa da API estará disponível em:
-```
-https://localhost:5024/swagger
-```
+## 5. Integrantes
+### CAIO HENRIQUE - RM 554600
+### ANTÔNIO LINO - RM 554518
+### CARLOS EDUARDO - RM 555223
 

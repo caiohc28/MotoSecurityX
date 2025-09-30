@@ -38,3 +38,56 @@ docker push acrmotox.azurecr.io/motox:v2
 ### ANTÔNIO LINO - RM 554518
 ### CARLOS EDUARDO - RM 555223
 
+## 6. Testes do CRUD
+
+``` bash
+🔹 Motos
+
+✅ POST /api/motos
+
+{
+  "placa": "AAA1B23",
+  "modelo": "Honda Titan 160",
+  "status": "DENTRO_PATIO"
+}
+
+
+✅ PUT /api/motos/1
+
+{
+  "placa": "AAA1B23",
+  "modelo": "Honda Titan 160 EX",
+  "status": "FORA_PATIO"
+}
+
+
+✅ DELETE /api/motos/1
+
+✅ GET /api/motos
+```
+
+````bash
+🔹 Patios
+
+✅ POST /api/patios
+
+{
+  "nome": "Filial Rio de Janeiro",
+  "cep": "22031-050",
+  "cidade": "Rio de Janeiro"
+}
+
+
+✅ PUT /api/patios/1
+
+{
+  "nome": "Filial São Paulo - Centro Atualizada",
+  "cep": "01000-000",
+  "cidade": "São Paulo"
+}
+
+
+✅ DELETE /api/patios/1
+
+✅ GET /api/patios
+```

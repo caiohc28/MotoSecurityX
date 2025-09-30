@@ -31,7 +31,7 @@ docker build -t acrmotox.azurecr.io/motox:v2 .
 az login
 az acr login --name acrmotox
 docker push acrmotox.azurecr.io/motox:v2
-
+````
 
 ## 5. Integrantes
 ### CAIO HENRIQUE - RM 554600

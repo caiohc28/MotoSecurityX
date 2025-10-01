@@ -82,7 +82,7 @@ docker push acrmotox.azurecr.io/motox:v2
 ✅ PUT /api/Patio/3
 
 {
-  "id": 3,
+  "id": "3",
   "nome": "Pátio Leste - Patriarca",
 }
 

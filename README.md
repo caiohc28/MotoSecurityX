@@ -20,8 +20,8 @@ O **MotoSecurityX** é uma API REST para controle de **motos e pátios**, permit
 
 Tabelas:
 
-- **Pátios**
-- **Motos**
+- **dbo.motos**
+- **dbo.patios**
 
 
 ##  4. Deploy com Docker + Azure
@@ -43,50 +43,50 @@ docker push acrmotox.azurecr.io/motox:v2
 ``` bash
 🔹 Motos
 
-✅ POST /api/motos
+✅ POST /api/Moto
 
 {
-  "placa": "AAA1B23",
-  "modelo": "Honda Titan 160",
-  "status": "DENTRO_PATIO"
+  "id": "0",
+  "placa": "chc2812",
+  "modelo": "Honda",
+  "situacao": "dentro"
 }
 
 
-✅ PUT /api/motos/1
+✅ PUT /api/Moto/3
 
 {
-  "placa": "AAA1B23",
-  "modelo": "Honda Titan 160 EX",
-  "status": "FORA_PATIO"
+  "id": "3",
+  "placa": "chc2812",
+  "modelo": "Honda",
+  "situacao": "fora"
 }
 
 
-✅ DELETE /api/motos/1
+✅ DELETE /api/Moto/3
 
-✅ GET /api/motos
+✅ GET /api/Moto
 ```
 
 ````bash
 🔹 Patios
 
-✅ POST /api/patios
+✅ POST /api/Patio
 
 {
-  "nome": "Filial Rio de Janeiro",
-  "cep": "22031-050",
-  "cidade": "Rio de Janeiro"
+  "id": "0"
+  "nome": "Pátio Leste - Itaquera",
 }
 
 
-✅ PUT /api/patios/1
+✅ PUT /api/Patio/3
 
 {
-  "nome": "Filial São Paulo - Centro Atualizada",
-  "cep": "01000-000",
-  "cidade": "São Paulo"
+  "id": 3,
+  "nome": "Pátio Leste - Patriarca",
 }
 
 
-✅ DELETE /api/patios/1
+✅ DELETE /api/Patio/3
 
-✅ GET /api/patios
+✅ GET /api/Patio
